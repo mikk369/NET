@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Rainer Peips" content="nullam" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>NULLAM / Welcome!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"
+        ><img src="./images/logo.svg" alt="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" alt="homepage"
+              >Homepage <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AddEvent.html">Add Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="participants.html">Participants view</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AddQuest.html">Add Quest</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Personaldata.html">Personal data</a>
+          </li>
+        </ul>
+        <img src="./images/symbol.svg" alt="symbol" />
+      </div>
+    </nav>
+    <div class="card mb-3">
+      <div class="row no-gutters">
+        <div class="col-md-10">
+          <h1 class="card-title">Add event</h1>
+        </div>
+      </div>
+    </div>
+    <h1>Add event!</h1>
+    <form id="new-task-form">
+      <input
+        type="text"
+        id="new-task-input"
+        placeholder="What do you have planned?"
+      />
+      <input type="submit" id="new-task-submit" value="Add event" />
+    </form>
+    <section class="task-list">
+      <h2>Event list</h2>
+      <!--     
+      <div class="task">
+        <div class="content">
+          <input type="text" class="text" value="" readonly />
+        </div>
+        <div class="actions">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+      <div class="task">
+        <div class="content">
+          <input type="text" class="text" value="" readonly />
+        </div>
+        <div class="actions">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </div>
+      </div> -->
+    </section>
+    <footer>
+      <div class="card text-center">
+        <div class="text">
+          <div class="card-header">
+            <h1>Contact <br /></h1>
+            <ul>
+              <li>Office: Tallinnas Väike-Ameerika 1, 11415 Tallinn</li>
+              <li>Mobile: 605 4450</li>
+              <li>Faks: 605 3186</li>
+            </ul>
+            <ul>
+              <li>Branch office: Võrus Oja tn 7(visiting address)</li>
+              <li>Mobile: 605 3330</li>
+              <li>Faks: 605 3155</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
