@@ -34,14 +34,18 @@ header h1 {
 #new-task-form {
   display: flex;
 }
-input,
-button {
+input {
   appearance: none;
   border: none;
   outline: none;
   background: none;
 }
-#new-task-input {
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+.todo-input {
   flex: 1 1 0%;
   background-color: var(--darker);
   padding: 1rem;
@@ -51,11 +55,11 @@ button {
   font-size: 1.25rem;
 }
 
-#new-task-input::placeholder {
+.todo-input::placeholder {
   color: var(--gray);
 }
 
-#new-task-submit {
+.add-event {
   color: var(--pink);
   font-size: 1.25rem;
   font-weight: 700;
@@ -66,10 +70,10 @@ button {
   transition: 0.4s;
 }
 
-#new-task-submit:hover {
+.add-event:hover {
   opacity: 0.8;
 }
-#new-task-submit:active {
+add-event:active {
   opacity: 0.6;
 }
 main {
@@ -110,9 +114,9 @@ main {
   transition: 0.4s;
 }
 
-#tasks .task .content .text.not(:read-only) {
+/* #tasks .task .content .text.not(:read-only) {
   color: var(--pink);
-}
+} */
 
 #tasks .task .actions {
   display: flex;
@@ -136,12 +140,16 @@ main {
   opacity: 0.6;
 }
 
-.task .actions .edit {
+.edit {
   background-image: linear-gradient(to right, var(--pink), var(--purple));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.task .actions .delete {
+.delete {
   color: crimson;
+}
+
+.todo-list {
+  padding: 10px;
 }
