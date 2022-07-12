@@ -4,7 +4,7 @@ const addButton = document.querySelector("#addEvent");
 const addDate = document.querySelector('input[type="date"]');
 const place = document.querySelector("#placeholder");
 const comments = document.querySelector("#comment");
-const eventList = document.querySelector(".event-container");
+const eventList = document.querySelector(".event-table");
 
 //event listeners
 
@@ -15,41 +15,51 @@ function addEvents(event) {
   //prevent page refreshing
   event.preventDefault();
   //Event Div
-  const eventDiv = document.createElement("div");
-  eventDiv.classList.add("event");
+  const eventDiv = document.createElement("tr");
+  eventDiv.classList.add("event-data");
 
-  // validate inputs
-  if (eventName.value === "") {
-    alert("Please input values"), (eventDiv = false);
-  }
-  //create h1
-  const newEventName = document.createElement("h1");
-  newEventName.innerText = eventName.value;
-  eventDiv.appendChild(newEventName);
-  eventList.appendChild(eventDiv);
+  // // validate inputs
+  // if (eventName.value === "") {
+  //   alert("Please input values"), (eventDiv = false);
+  // }
+
+  //create event name
+  const newEventData = document.createElement("td");
+  newEventData.innerText = eventName.value;
+  eventDiv.appendChild(newEventData);
+  eventList.appendChild(newEventData);
 
   //date element
-  const newDate = document.createElement("h3");
+  const newDate = document.createElement("td");
   newDate.innerText = addDate.value;
   eventDiv.appendChild(newDate);
   eventList.appendChild(newDate);
 
-  //create h2 place
-  const newEventPlace = document.createElement("h2");
+  //create place element
+  const newEventPlace = document.createElement("td");
   newEventPlace.innerText = place.value;
-
   eventDiv.appendChild(newEventPlace);
   eventList.appendChild(newEventPlace);
 
-  //comment span element
-  const newComments = document.createElement("span");
+  //comment element
+  const newComments = document.createElement("td");
   newComments.innerText = comments.value;
   eventDiv.appendChild(newComments);
   eventList.appendChild(newComments);
 
+  //create tableRow
+
+  const tableRow = document.createElement("tr");
+  eventDiv.appendChild(tableRow);
+  eventList.appendChild(tableRow);
+  // creater line
+  // const line = document.createElement("hr");
+  // eventDiv.appendChild(line);
+  // eventList.appendChild(line);
+
   //clears input
-  eventName.value = "";
-  place.value = "";
-  comments.value = "";
-  addDate.value = "";
+  // eventName.value = "";
+  // place.value = "";
+  // comments.value = "";
+  // addDate.value = "";
 }
