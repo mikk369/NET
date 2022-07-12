@@ -18,10 +18,12 @@ function addEvents(event) {
   const eventDiv = document.createElement("tr");
   eventDiv.classList.add("event-data");
 
-  // // validate inputs
-  // if (eventName.value === "") {
-  //   alert("Please input values"), (eventDiv = false);
-  // }
+  // validate inputs & wont create empty div
+  if (eventName.value === "") {
+    alert("Please input event name");
+  } else if (place.value === "") {
+    alert("Please input Place"), (eventDiv = false);
+  }
 
   //create event name
   const newEventData = document.createElement("td");
@@ -48,18 +50,13 @@ function addEvents(event) {
   eventList.appendChild(newComments);
 
   //create tableRow
-
   const tableRow = document.createElement("tr");
   eventDiv.appendChild(tableRow);
   eventList.appendChild(tableRow);
-  // creater line
-  // const line = document.createElement("hr");
-  // eventDiv.appendChild(line);
-  // eventList.appendChild(line);
 
-  //clears input
-  // eventName.value = "";
-  // place.value = "";
-  // comments.value = "";
-  // addDate.value = "";
+  // clears input
+  eventName.value = "";
+  place.value = "";
+  comments.value = "";
+  addDate.value = "";
 }
