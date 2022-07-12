@@ -23,14 +23,6 @@
 .col-md-4 {
   font-size: 0;
 }
-/* .event-container {
-  text-align: center;
-  justify-content: center;
-  display: block;
-  background-color: rgb(216, 218, 219);
-  /* margin-top: 9px; */
-/* overflow-y: hidden; */
-/* }  */
 
 .table {
   margin-top: 9px;
@@ -38,6 +30,15 @@
   justify-content: center;
   display: inline-flex;
 }
-.event-table th {
-  font-size: bold;
+h1,
+h2 {
+  overflow-y: hidden;
+}
+
+.delete-btn,
+.edit-btn {
+  border: none;
+  margin-top: 10px;
+  display: inline;
+  margin-right: 10px;
 }
