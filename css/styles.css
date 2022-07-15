@@ -34,7 +34,9 @@ h1,
 h2 {
   overflow-y: hidden;
 }
-
+.button-div {
+  background-color: black;
+}
 .delete-btn,
 .edit-btn {
   border: none;
