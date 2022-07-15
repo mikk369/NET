@@ -18,10 +18,11 @@ function addEvents(event) {
   eventDiv.classList.add("event-data");
 
   // validate inputs & wont create empty div
-  if (eventName.value === "") {
+  if (eventName.value.trim() === "") {
     alert("Please add event name");
-  } else if (place.value === "") {
-    alert("Please add place"), (eventDiv = false);
+  } else if (place.value() === "") {
+    alert("Please add place"), (tableInfo = false);
+    return true;
   }
   // create tableRow
   const tableRow = document.createElement("tr");
@@ -68,7 +69,7 @@ function addEvents(event) {
   editButton.classList.add("edit-btn");
   tableRow.appendChild(editButton);
 
-  //TODO:delete btn addEvent
+  //btn addEvent
   const deleteEventBtn = document.querySelectorAll(".delete-btn");
   console.log(deleteEventBtn.length);
   for (i = 0; i < deleteEventBtn.length; i++) {
